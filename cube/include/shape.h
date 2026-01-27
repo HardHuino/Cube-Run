@@ -1,18 +1,20 @@
-#pragma once
+#ifndef SHAPE_H
+#define SHAPE_H
 
 #include "shader.h"
-#include "node.h"
-
+#include <GL/glew.h>
 #include <glm/glm.hpp>
-#include "glm/ext.hpp"
-#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 class Shape {
 public:
-    Shape(Shader *shader_program);
-
+    GLuint shader_program_; // Public pour permettre l'accès depuis Viewer
+    
+    Shape(Shader* shader_program);
+    virtual ~Shape() = default;
+    
     virtual void draw(glm::mat4& model, glm::mat4& view, glm::mat4& projection);
     virtual void key_handler(int key);
-protected:
-    GLuint shader_program_;
 };
+
+#endif

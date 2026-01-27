@@ -6,181 +6,108 @@ TexturedCube::TexturedCube(Shader* shader_program,
     Texture* tex_top, Texture* tex_bottom)
     : Shape(shader_program)
 {
-    textures[0] = tex_front;
-    textures[1] = tex_right;
-    textures[2] = tex_back;
-    textures[3] = tex_left;
-    textures[4] = tex_top;
-    textures[5] = tex_bottom;
+    textures[0] = tex_front; textures[1] = tex_right; textures[2] = tex_back;
+    textures[3] = tex_left;  textures[4] = tex_top;   textures[5] = tex_bottom;
 
-    // Cube vertices - 4 sommets par face = 24 sommets au total
+    // LE CHANGEMENT EST ICI : 
+    // On ajoute 3 chiffres au milieu de chaque ligne pour la Normale (nx, ny, nz)
+    // Format : Position(3), NORMAL(3), Texture(2)
     GLfloat vertex_buffer_data[] = {
-        // Front face (z = 0.5)
-        -0.5f, -0.5f,  0.5f,  // 0
-         0.5f, -0.5f,  0.5f,  // 1
-         0.5f,  0.5f,  0.5f,  // 2
-        -0.5f,  0.5f,  0.5f,  // 3
+        // Front face (Normale vers nous : 0, 0, 1)
+        -0.5f, -0.5f,  0.5f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f,
+         0.5f, -0.5f,  0.5f,   0.0f, 0.0f, 1.0f,   1.0f, 0.0f,
+         0.5f,  0.5f,  0.5f,   0.0f, 0.0f, 1.0f,   1.0f, 1.0f,
+        -0.5f,  0.5f,  0.5f,   0.0f, 0.0f, 1.0f,   0.0f, 1.0f,
 
-        // Right face (x = 0.5)
-         0.5f, -0.5f,  0.5f,  // 4
-         0.5f, -0.5f, -0.5f,  // 5
-         0.5f,  0.5f, -0.5f,  // 6
-         0.5f,  0.5f,  0.5f,  // 7
+        // Right face (Normale vers la droite : 1, 0, 0)
+         0.5f, -0.5f,  0.5f,   1.0f, 0.0f, 0.0f,   0.0f, 0.0f,
+         0.5f, -0.5f, -0.5f,   1.0f, 0.0f, 0.0f,   1.0f, 0.0f,
+         0.5f,  0.5f, -0.5f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,
+         0.5f,  0.5f,  0.5f,   1.0f, 0.0f, 0.0f,   0.0f, 1.0f,
 
-         // Back face (z = -0.5)
-          0.5f, -0.5f, -0.5f,  // 8
-         -0.5f, -0.5f, -0.5f,  // 9
-         -0.5f,  0.5f, -0.5f,  // 10
-          0.5f,  0.5f, -0.5f,  // 11
+         // Back face (Normale vers le fond : 0, 0, -1)
+          0.5f, -0.5f, -0.5f,   0.0f, 0.0f, -1.0f,   0.0f, 0.0f,
+         -0.5f, -0.5f, -0.5f,   0.0f, 0.0f, -1.0f,   1.0f, 0.0f,
+         -0.5f,  0.5f, -0.5f,   0.0f, 0.0f, -1.0f,   1.0f, 1.0f,
+          0.5f,  0.5f, -0.5f,   0.0f, 0.0f, -1.0f,   0.0f, 1.0f,
 
-          // Left face (x = -0.5)
-          -0.5f, -0.5f, -0.5f,  // 12
-          -0.5f, -0.5f,  0.5f,  // 13
-          -0.5f,  0.5f,  0.5f,  // 14
-          -0.5f,  0.5f, -0.5f,  // 15
+          // Left face (Normale vers la gauche : -1, 0, 0)
+          -0.5f, -0.5f, -0.5f,  -1.0f, 0.0f, 0.0f,   0.0f, 0.0f,
+          -0.5f, -0.5f,  0.5f,  -1.0f, 0.0f, 0.0f,   1.0f, 0.0f,
+          -0.5f,  0.5f,  0.5f,  -1.0f, 0.0f, 0.0f,   1.0f, 1.0f,
+          -0.5f,  0.5f, -0.5f,  -1.0f, 0.0f, 0.0f,   0.0f, 1.0f,
 
-          // Top face (y = 0.5)
-          -0.5f,  0.5f,  0.5f,  // 16
-           0.5f,  0.5f,  0.5f,  // 17
-           0.5f,  0.5f, -0.5f,  // 18
-          -0.5f,  0.5f, -0.5f,  // 19
+          // Top face (Normale vers le haut : 0, 1, 0)
+          -0.5f,  0.5f,  0.5f,   0.0f, 1.0f, 0.0f,   0.0f, 0.0f,
+           0.5f,  0.5f,  0.5f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f,
+           0.5f,  0.5f, -0.5f,   0.0f, 1.0f, 0.0f,   1.0f, 1.0f,
+          -0.5f,  0.5f, -0.5f,   0.0f, 1.0f, 0.0f,   0.0f, 1.0f,
 
-          // Bottom face (y = -0.5)
-          -0.5f, -0.5f, -0.5f,  // 20
-           0.5f, -0.5f, -0.5f,  // 21
-           0.5f, -0.5f,  0.5f,  // 22
-          -0.5f, -0.5f,  0.5f   // 23
+          // Bottom face (Normale vers le bas : 0, -1, 0)
+          -0.5f, -0.5f, -0.5f,   0.0f, -1.0f, 0.0f,   0.0f, 0.0f,
+           0.5f, -0.5f, -0.5f,   0.0f, -1.0f, 0.0f,   1.0f, 0.0f,
+           0.5f, -0.5f,  0.5f,   0.0f, -1.0f, 0.0f,   1.0f, 1.0f,
+          -0.5f, -0.5f,  0.5f,   0.0f, -1.0f, 0.0f,   0.0f, 1.0f
     };
 
-    // Coordonnées de texture - 4 par face, chaque face utilise toute la texture (0,0 à 1,1)
-    GLfloat tex_coords[] = {
-        // Front face
-        0.0f, 0.0f,
-        1.0f, 0.0f,
-        1.0f, 1.0f,
-        0.0f, 1.0f,
-
-        // Right face
-        0.0f, 0.0f,
-        1.0f, 0.0f,
-        1.0f, 1.0f,
-        0.0f, 1.0f,
-
-        // Back face
-        0.0f, 0.0f,
-        1.0f, 0.0f,
-        1.0f, 1.0f,
-        0.0f, 1.0f,
-
-        // Left face
-        0.0f, 0.0f,
-        1.0f, 0.0f,
-        1.0f, 1.0f,
-        0.0f, 1.0f,
-
-        // Top face
-        0.0f, 0.0f,
-        1.0f, 0.0f,
-        1.0f, 1.0f,
-        0.0f, 1.0f,
-
-        // Bottom face
-        0.0f, 0.0f,
-        1.0f, 0.0f,
-        1.0f, 1.0f,
-        0.0f, 1.0f
-    };
-
-    // Indices - 2 triangles par face, 6 faces
     GLuint indices[] = {
-        // Front face
-        0, 1, 2,
-        2, 3, 0,
-        // Right face
-        4, 5, 6,
-        6, 7, 4,
-        // Back face
-        8, 9, 10,
-        10, 11, 8,
-        // Left face
-        12, 13, 14,
-        14, 15, 12,
-        // Top face
-        16, 17, 18,
-        18, 19, 16,
-        // Bottom face
-        20, 21, 22,
-        22, 23, 20
+        0, 1, 2, 2, 3, 0,       4, 5, 6, 6, 7, 4,       8, 9, 10, 10, 11, 8,
+        12, 13, 14, 14, 15, 12, 16, 17, 18, 18, 19, 16, 20, 21, 22, 22, 23, 20
     };
 
     glGenVertexArrays(1, &VAO);
     glBindVertexArray(VAO);
+    glGenBuffers(2, buffers);
 
-    glGenBuffers(3, &buffers[0]);
-
-    // Vertex position buffer
-    glEnableVertexAttribArray(0);
     glBindBuffer(GL_ARRAY_BUFFER, buffers[0]);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertex_buffer_data), vertex_buffer_data, GL_STATIC_DRAW);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, NULL);
 
-    // Texture coordinate buffer
-    glEnableVertexAttribArray(1);
-    glBindBuffer(GL_ARRAY_BUFFER, buffers[1]);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(tex_coords), tex_coords, GL_STATIC_DRAW);
-    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 0, NULL);
-
-    // Index buffer
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, buffers[2]);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, buffers[1]);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+
+    // CONFIGURATION DES ATTRIBUTS (TrÃ¨s important pour matcher le Shader)
+    // 1. Position (location = 0)
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(0);
+
+    // 2. Normal (location = 1) -> On saute 3 floats pour arriver aux normales
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
+    glEnableVertexAttribArray(1);
+
+    // 3. Texture (location = 2) -> On saute 6 floats pour arriver aux UVs
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
+    glEnableVertexAttribArray(2);
 
     loc_diffuse_map = glGetUniformLocation(this->shader_program_, "diffuse_map");
 }
 
 TexturedCube::~TexturedCube() {
     glDeleteVertexArrays(1, &VAO);
-    glDeleteBuffers(3, &buffers[0]);
+    glDeleteBuffers(2, buffers);
 }
 
 void TexturedCube::draw(glm::mat4& model, glm::mat4& view, glm::mat4& projection) {
     glUseProgram(this->shader_program_);
     glBindVertexArray(VAO);
 
-    // Envoyer les matrices
     Shape::draw(model, view, projection);
+    
+    // ENVOI DE LA LUMIERE AU SHADER
+    // On place la lumiÃ¨re en haut Ã  droite (World Space)
+    glUniform3f(glGetUniformLocation(shader_program_, "lightPos"), 5.0f, 10.0f, 5.0f);
+    // Couleur blanche
+    glUniform3f(glGetUniformLocation(shader_program_, "lightColor"), 1.0f, 1.0f, 1.0f);
 
     glActiveTexture(GL_TEXTURE0);
     glUniform1i(loc_diffuse_map, 0);
 
-    // Dessiner chaque face avec sa propre texture
-    // Front face (indices 0-5)
-    glBindTexture(GL_TEXTURE_2D, textures[0]->getGLid());
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, (void*)0);
-
-    // Right face (indices 6-11)
-    glBindTexture(GL_TEXTURE_2D, textures[1]->getGLid());
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, (void*)(6 * sizeof(GLuint)));
-
-    // Back face (indices 12-17)
-    glBindTexture(GL_TEXTURE_2D, textures[2]->getGLid());
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, (void*)(12 * sizeof(GLuint)));
-
-    // Left face (indices 18-23)
-    glBindTexture(GL_TEXTURE_2D, textures[3]->getGLid());
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, (void*)(18 * sizeof(GLuint)));
-
-    // Top face (indices 24-29)
-    glBindTexture(GL_TEXTURE_2D, textures[4]->getGLid());
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, (void*)(24 * sizeof(GLuint)));
-
-    // Bottom face (indices 30-35)
-    glBindTexture(GL_TEXTURE_2D, textures[5]->getGLid());
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, (void*)(30 * sizeof(GLuint)));
-
+    for(int i=0; i<6; i++) {
+        glBindTexture(GL_TEXTURE_2D, textures[i]->getGLid());
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, (void*)(i * 6 * sizeof(GLuint)));
+    }
+    
     glBindTexture(GL_TEXTURE_2D, 0);
     glUseProgram(0);
 }
 
-void TexturedCube::key_handler(int key) {
-    return;
-}
+void TexturedCube::key_handler(int key) { return; }
