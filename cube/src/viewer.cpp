@@ -82,8 +82,9 @@ void Viewer::run()
             0.1f, 100.0f);
 
         // Debug
-        std::cout << "Camera pos: " << camera->Position.x << ", "
+        /*std::cout << "Camera pos: " << camera->Position.x << ", "
             << camera->Position.y << ", " << camera->Position.z << std::endl;
+            */
 
         scene_root->draw(model, view, projection);
 

@@ -33,6 +33,7 @@ set(SOURCES
     ${SRC_DIR}/lighting_sphere.cpp
     ${SRC_DIR}/Cube.cpp
     ${SRC_DIR}/texture_cube.cpp
+    ${SRC_DIR}/textured_plane.cpp
     ${SRC_DIR}/Camera.cpp
 )
 
