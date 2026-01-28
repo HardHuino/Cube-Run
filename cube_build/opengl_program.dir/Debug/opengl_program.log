@@ -1,0 +1,28 @@
+﻿  Building Custom Rule C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube/CMakeLists.txt
+  main.cpp
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\main.cpp(10,9): warning C4005: 'SHADER_DIR': macro redefinition
+      C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\main.cpp(10,9):
+      'SHADER_DIR' previously declared on the command line
+  
+  node.cpp
+  shape.cpp
+  shader.cpp
+  viewer.cpp
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\viewer.cpp(14,25): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\viewer.cpp(154,96): warning C4267: 'argument': conversion from 'size_t' to 'GLint', possible loss of data
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\viewer.cpp(171,96): warning C4267: 'argument': conversion from 'size_t' to 'GLint', possible loss of data
+  triangle.cpp
+  pyramid.cpp
+  cylinder.cpp
+  sphere.cpp
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\sphere.cpp(57,23): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\sphere.cpp(58,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\sphere.cpp(61,27): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  texture.cpp
+  textured_sphere.cpp
+  lighting_sphere.cpp
+  cube.cpp
+  texture_cube.cpp
+  Camera.cpp
+  Generating Code...
+  opengl_program.vcxproj -> C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube_build\Debug\opengl_program.exe

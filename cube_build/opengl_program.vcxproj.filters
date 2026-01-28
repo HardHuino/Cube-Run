@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\node.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\shape.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\viewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\triangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\pyramid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\cylinder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\sphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\textured_sphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\lighting_sphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\cube.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\texture_cube.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BBD1594A-4BC1-3EE0-942B-C6E5B58D8AC2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\main.cpp;C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube_build\opengl_program.dir\Debug\main.obj
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\node.cpp;C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube_build\opengl_program.dir\Debug\node.obj
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\shape.cpp;C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube_build\opengl_program.dir\Debug\shape.obj
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\shader.cpp;C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube_build\opengl_program.dir\Debug\shader.obj
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\viewer.cpp;C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube_build\opengl_program.dir\Debug\viewer.obj
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\triangle.cpp;C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube_build\opengl_program.dir\Debug\triangle.obj
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\pyramid.cpp;C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube_build\opengl_program.dir\Debug\pyramid.obj
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\cylinder.cpp;C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube_build\opengl_program.dir\Debug\cylinder.obj
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\sphere.cpp;C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube_build\opengl_program.dir\Debug\sphere.obj
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\texture.cpp;C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube_build\opengl_program.dir\Debug\texture.obj
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\textured_sphere.cpp;C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube_build\opengl_program.dir\Debug\textured_sphere.obj
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\lighting_sphere.cpp;C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube_build\opengl_program.dir\Debug\lighting_sphere.obj
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\cube.cpp;C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube_build\opengl_program.dir\Debug\cube.obj
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\texture_cube.cpp;C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube_build\opengl_program.dir\Debug\texture_cube.obj
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\Camera.cpp;C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube_build\opengl_program.dir\Debug\Camera.obj

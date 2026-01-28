@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube_build\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube_build\external\glew-cmake\bin\Debug\glew-sharedd.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube_build\Debug\opengl_program.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube_build\x64\Debug\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

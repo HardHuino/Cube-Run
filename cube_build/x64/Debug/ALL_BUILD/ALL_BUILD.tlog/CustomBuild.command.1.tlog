@@ -1,0 +1,10 @@
+^C:\USERS\COREN\DOCUMENTS\POLYTECH\ET3\INFOGRAPHIC\CUBE-RUN\CUBE\CMAKELISTS.TXT
+setlocal
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\cmake-3.31.10-windows-x86_64\bin\cmake.exe -SC:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube -BC:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build --check-stamp-file C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
