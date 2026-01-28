@@ -3,7 +3,7 @@
 
 Cube::Cube(Shader* shader_program) : Shape(shader_program)
 {
-    // Cube vertices - 4 sommets par face = 24 sommets au total
+    // Cube vertices
     GLfloat vertex_buffer_data[] = {
         // Front face (z = 0.5)
         -0.5f, -0.5f,  0.5f,  // 0
@@ -42,7 +42,7 @@ Cube::Cube(Shader* shader_program) : Shape(shader_program)
           -0.5f, -0.5f,  0.5f   // 23
     };
 
-    // Cube indices - 2 triangles par face, 6 faces
+    // Cube indices
     GLuint indices[] = {
         // Front face
         0, 1, 2,

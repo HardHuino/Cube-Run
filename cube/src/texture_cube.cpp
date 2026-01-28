@@ -9,41 +9,39 @@ TexturedCube::TexturedCube(Shader* shader_program,
     textures[0] = tex_front; textures[1] = tex_right; textures[2] = tex_back;
     textures[3] = tex_left;  textures[4] = tex_top;   textures[5] = tex_bottom;
 
-    // LE CHANGEMENT EST ICI : 
-    // On ajoute 3 chiffres au milieu de chaque ligne pour la Normale (nx, ny, nz)
     // Format : Position(3), NORMAL(3), Texture(2)
     GLfloat vertex_buffer_data[] = {
-        // Front face (Normale vers nous : 0, 0, 1)
+        // Front face
         -0.5f, -0.5f,  0.5f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f,
          0.5f, -0.5f,  0.5f,   0.0f, 0.0f, 1.0f,   1.0f, 0.0f,
          0.5f,  0.5f,  0.5f,   0.0f, 0.0f, 1.0f,   1.0f, 1.0f,
         -0.5f,  0.5f,  0.5f,   0.0f, 0.0f, 1.0f,   0.0f, 1.0f,
 
-        // Right face (Normale vers la droite : 1, 0, 0)
+        // Right face 
          0.5f, -0.5f,  0.5f,   1.0f, 0.0f, 0.0f,   0.0f, 0.0f,
          0.5f, -0.5f, -0.5f,   1.0f, 0.0f, 0.0f,   1.0f, 0.0f,
          0.5f,  0.5f, -0.5f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,
          0.5f,  0.5f,  0.5f,   1.0f, 0.0f, 0.0f,   0.0f, 1.0f,
 
-         // Back face (Normale vers le fond : 0, 0, -1)
+         // Back face
           0.5f, -0.5f, -0.5f,   0.0f, 0.0f, -1.0f,   0.0f, 0.0f,
          -0.5f, -0.5f, -0.5f,   0.0f, 0.0f, -1.0f,   1.0f, 0.0f,
          -0.5f,  0.5f, -0.5f,   0.0f, 0.0f, -1.0f,   1.0f, 1.0f,
           0.5f,  0.5f, -0.5f,   0.0f, 0.0f, -1.0f,   0.0f, 1.0f,
 
-          // Left face (Normale vers la gauche : -1, 0, 0)
+          // Left face 
           -0.5f, -0.5f, -0.5f,  -1.0f, 0.0f, 0.0f,   0.0f, 0.0f,
           -0.5f, -0.5f,  0.5f,  -1.0f, 0.0f, 0.0f,   1.0f, 0.0f,
           -0.5f,  0.5f,  0.5f,  -1.0f, 0.0f, 0.0f,   1.0f, 1.0f,
           -0.5f,  0.5f, -0.5f,  -1.0f, 0.0f, 0.0f,   0.0f, 1.0f,
 
-          // Top face (Normale vers le haut : 0, 1, 0)
+          // Top face 
           -0.5f,  0.5f,  0.5f,   0.0f, 1.0f, 0.0f,   0.0f, 0.0f,
            0.5f,  0.5f,  0.5f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f,
            0.5f,  0.5f, -0.5f,   0.0f, 1.0f, 0.0f,   1.0f, 1.0f,
           -0.5f,  0.5f, -0.5f,   0.0f, 1.0f, 0.0f,   0.0f, 1.0f,
 
-          // Bottom face (Normale vers le bas : 0, -1, 0)
+          // Bottom face 
           -0.5f, -0.5f, -0.5f,   0.0f, -1.0f, 0.0f,   0.0f, 0.0f,
            0.5f, -0.5f, -0.5f,   0.0f, -1.0f, 0.0f,   1.0f, 0.0f,
            0.5f, -0.5f,  0.5f,   0.0f, -1.0f, 0.0f,   1.0f, 1.0f,
@@ -65,16 +63,15 @@ TexturedCube::TexturedCube(Shader* shader_program,
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, buffers[1]);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
-    // CONFIGURATION DES ATTRIBUTS (Très important pour matcher le Shader)
-    // 1. Position (location = 0)
+    // Position
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
 
-    // 2. Normal (location = 1) -> On saute 3 floats pour arriver aux normales
+    // Normal, On saute 3 floats pour arriver aux normales
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
 
-    // 3. Texture (location = 2) -> On saute 6 floats pour arriver aux UVs
+    // Texture, On saute 6 floats pour arriver aux UVs
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
     glEnableVertexAttribArray(2);
 
@@ -92,11 +89,10 @@ void TexturedCube::draw(glm::mat4& model, glm::mat4& view, glm::mat4& projection
 
     Shape::draw(model, view, projection);
     
-    // ENVOI DE LA LUMIERE AU SHADER
-    // On place la lumière en haut à droite (World Space)
+    // On place la lumière en haut à droite (Dans le monde)
     glUniform3f(glGetUniformLocation(shader_program_, "lightPos"), 5.0f, 10.0f, 5.0f);
-    // Couleur blanche
-    glUniform3f(glGetUniformLocation(shader_program_, "lightColor"), 1.0f, 1.0f, 1.0f);
+    
+    glUniform3f(glGetUniformLocation(shader_program_, "lightColor"), 1.0f, 1.0f, 1.0f);// Couleur blanche
 
     glActiveTexture(GL_TEXTURE0);
     glUniform1i(loc_diffuse_map, 0);

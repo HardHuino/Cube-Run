@@ -14,17 +14,14 @@ void main()
     // On calcule la distance de l'objet par rapport à la caméra
     float distance = length(FragPos);
 
-    // --- GESTION SPÉCIALE DU CIEL ---
-    // Ton ciel fait 800 unités de large (scale dans main.cpp).
-    // Donc les murs du ciel sont à 400 unités.
-    // Si un pixel est à plus de 300 unités, c'est forcément le ciel.
+    // GESTION SPÉCIALE DU CIEL
     if(distance > 300.0) {
         // On affiche juste la texture du ciel, sans lumière et sans brouillard (Full Bright)
         FragColor = texture(diffuse_map, TexCoord);
         return; // On arrête la fonction ici pour ce pixel
     }
 
-    // --- 1. CALCUL DE LA LUMIÈRE (Pour le reste : Joueur, Sol, Obstacles) ---
+    // CALCUL DE LA LUMIÈRE (Pour Joueur, Sol, Obstacles)
     
     // Ambient
     float ambientStrength = 0.4;
@@ -46,12 +43,11 @@ void main()
     vec4 texColor = texture(diffuse_map, TexCoord);
     vec3 lightingResult = (ambient + diffuse + specular) * texColor.rgb;
 
-    // --- 2. BROUILLARD (Seulement pour les objets proches) ---
+    // BROUILLARD 
 
-    // J'ai réduit la densité à 0.015 (c'était 0.025) pour que ce soit moins "purée de pois"
     float density = 0.015; 
     
-    // Couleur du brouillard (Bleu nuit sombre pour se fondre avec le fond du ciel)
+    // Couleur du brouillard (Bleu sombre)
     vec3 fogColor = vec3(0.05, 0.05, 0.1); 
 
     float fogFactor = 1.0 / exp(pow(distance * density, 2));

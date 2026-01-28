@@ -37,7 +37,7 @@ Viewer::Viewer(int width, int height) : width_(width), height_(height)
     player_rotation_z = 0.0f;
     target_rotation_z = 0.0f;
     start_rotation_z = 0.0f;
-    // ============================================
+    // 
 
     if (!glfwInit()) {
         std::cerr << "Failed to initialize GLFW" << std::endl;
@@ -224,7 +224,7 @@ void Viewer::run()
                 // Déplacer vers la nouvelle position X
                 player_node->translate(glm::vec3(new_x - p_pos.x, 0.0f, 0.0f));
 
-                // Animation de rotation - Interpoler entre start et target
+                // Animation de rotation - Interpoler entre start et la position souhaité
                 float new_rotation = start_rotation_z + (target_rotation_z - start_rotation_z) * eased_progress;
 
                 // Appliquer la rotation au cube

@@ -34,7 +34,7 @@ public:
     float lane_width;                 // Largeur entre les lignes
     int current_lane;                 // Ligne actuelle du joueur
     int target_lane;                  // Ligne cible (destination)
-    bool is_moving;                   // En cours de déplacement ?
+    bool is_moving;                   // Indique qu'il se dépace horizontalement
     float lane_transition_time;       // Temps écoulé dans la transition
     float lane_transition_duration;   // Durée totale de la transition
 

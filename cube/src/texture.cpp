@@ -50,7 +50,6 @@ Texture::Texture(const std::string& tex_file, GLenum wrap_mode, GLenum min_filte
     // generate mipmaps
     glGenerateMipmap(GL_TEXTURE_2D);
 
-    // free image data
     stbi_image_free(data);
 
     std::cout << "Loaded texture " << tex_file << " (" << width << "x" << height << ", " 

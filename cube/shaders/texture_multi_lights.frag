@@ -58,18 +58,17 @@ void main()
         // Distance entre le fragment et la pyramide
         float dist = length(pyramidPos - FragPos);
         
-        // Atténuation: la lumière diminue avec la distance
-        // Plus la pyramide est loin, moins elle éclaire
+        // Atténuation: lumière diminue avec distance
         float attenuation = 1.0 / (1.0 + 0.09 * dist + 0.032 * dist * dist);
         
         // Direction de la lumière de la pyramide
         vec3 pyramidLightDir = normalize(pyramidPos - FragPos);
         
-        // Diffuse de la pyramide
+        // Diffuse pyramide
         float pyramidDiff = max(dot(norm, pyramidLightDir), 0.0);
         vec3 pyramidDiffuse = pyramidDiff * pyramidColor * attenuation;
         
-        // On ajoute cette lumière au total (plus subtile)
+        // On ajoute cette lumière au total
         pyramidLighting += pyramidDiffuse * 50; // Augmente l'intensité de 500%
     }
     

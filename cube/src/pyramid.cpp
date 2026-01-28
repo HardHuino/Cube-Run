@@ -6,35 +6,35 @@ Pyramid::Pyramid(Shader *shader_program, Texture* texture, glm::vec3 emissiveCol
 {
     // Format: Position(3) | Normal(3) | UV(2)
     GLfloat vertex_buffer_data[] = {
-        // --- Base (Carré, Normale vers le bas) ---
+        // Base (Carré)
         -0.5f, -0.5f, -0.5f,   0.0f, -1.0f, 0.0f,   0.0f, 0.0f,
          0.5f, -0.5f, -0.5f,   0.0f, -1.0f, 0.0f,   1.0f, 0.0f,
          0.5f, -0.5f,  0.5f,   0.0f, -1.0f, 0.0f,   1.0f, 1.0f,
         -0.5f, -0.5f,  0.5f,   0.0f, -1.0f, 0.0f,   0.0f, 1.0f,
 
-        // --- Face Avant (Triangle) ---
+        // Face Avant (Triangle)
          0.0f,  0.5f,  0.0f,   0.0f, 0.5f, 1.0f,    0.5f, 1.0f, // Pointe
         -0.5f, -0.5f,  0.5f,   0.0f, 0.5f, 1.0f,    0.0f, 0.0f, // Bas Gauche
          0.5f, -0.5f,  0.5f,   0.0f, 0.5f, 1.0f,    1.0f, 0.0f, // Bas Droite
 
-        // --- Face Droite (Triangle) ---
+        // Face Droite (Triangle)
          0.0f,  0.5f,  0.0f,   1.0f, 0.5f, 0.0f,    0.5f, 1.0f,
          0.5f, -0.5f,  0.5f,   1.0f, 0.5f, 0.0f,    0.0f, 0.0f,
          0.5f, -0.5f, -0.5f,   1.0f, 0.5f, 0.0f,    1.0f, 0.0f,
 
-        // --- Face Arrière (Triangle) ---
+        // Face Arrière (Triangle) 
          0.0f,  0.5f,  0.0f,   0.0f, 0.5f, -1.0f,   0.5f, 1.0f,
          0.5f, -0.5f, -0.5f,   0.0f, 0.5f, -1.0f,   0.0f, 0.0f,
         -0.5f, -0.5f, -0.5f,   0.0f, 0.5f, -1.0f,   1.0f, 0.0f,
 
-        // --- Face Gauche (Triangle) ---
+        // Face Gauche (Triangle)
          0.0f,  0.5f,  0.0f,   -1.0f, 0.5f, 0.0f,   0.5f, 1.0f,
         -0.5f, -0.5f, -0.5f,   -1.0f, 0.5f, 0.0f,   0.0f, 0.0f,
         -0.5f, -0.5f,  0.5f,   -1.0f, 0.5f, 0.0f,   1.0f, 0.0f
     };
 
     GLuint indices[] = {
-        0, 1, 2, 2, 3, 0, // Base (2 triangles)
+        0, 1, 2, 2, 3, 0, // Base 
         4, 5, 6,          // Avant
         7, 8, 9,          // Droite
         10, 11, 12,       // Arrière
@@ -52,15 +52,15 @@ Pyramid::Pyramid(Shader *shader_program, Texture* texture, glm::vec3 emissiveCol
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, buffers[1]);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
-    // 1. Position (0)
+    // Position 
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
 
-    // 2. Normal (1) - Offset 3
+    // Normal 
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
 
-    // 3. Texture (2) - Offset 6
+    // Texture 
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
     glEnableVertexAttribArray(2);
 

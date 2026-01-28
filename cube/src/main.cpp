@@ -21,7 +21,7 @@ int main()
     std::string shader_dir = SHADER_DIR;
     std::string tex_dir = TEXTURE_DIR;
 
-    // Shader pour les objets normaux (sol, joueur) avec support multi-lumières
+    // Shader pour les objets "normaux" (sol, joueur), supporte multi-lumières
     Shader* shader = new Shader(shader_dir + "texture.vert", shader_dir + "texture_multi_lights.frag");
     
     // Shader pour les pyramides émissives
@@ -41,7 +41,7 @@ int main()
     viewer.scene_root->add(sky_node);
     viewer.sky_node = sky_node;
 
-    //Ground
+    //Sol
     Shape* ground_shape = new TexturedCube(shader, tex_ground, tex_ground, tex_ground, tex_ground, tex_ground, tex_ground);
     float g_len = 200.0f;
     viewer.ground_length = g_len;
@@ -73,7 +73,7 @@ int main()
         glm::vec3(0.2f, 1.0f, 0.5f)   // Vert clair
     };
     
-    // Créer les pyramides avec des couleurs différentes
+    // Créer les pyramides avec couleurs différentes
     for (int i = 0; i < 10; i++) {
         Shape* obs_shape = new Pyramid(emissive_shader, tex_obs, pyramid_colors[i]);
         
