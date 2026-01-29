@@ -9,8 +9,8 @@ C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\main.cpp(10,
   shader.cpp
   viewer.cpp
 C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\viewer.cpp(14,25): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\viewer.cpp(154,96): warning C4267: 'argument': conversion from 'size_t' to 'GLint', possible loss of data
-C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\viewer.cpp(171,96): warning C4267: 'argument': conversion from 'size_t' to 'GLint', possible loss of data
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\viewer.cpp(161,96): warning C4267: 'argument': conversion from 'size_t' to 'GLint', possible loss of data
+C:\Users\coren\Documents\Polytech\ET3\InfoGraphic\Cube-Run\cube\src\viewer.cpp(178,96): warning C4267: 'argument': conversion from 'size_t' to 'GLint', possible loss of data
   triangle.cpp
   pyramid.cpp
   cylinder.cpp

@@ -29,6 +29,10 @@ public:
     float ground_length;
     Camera* camera;
 
+	// Vitesse de course 
+    float run_speed;                  // Initiale
+	float speed_increment;            // Accelération
+
     // Variables pour le système de lignes 
     int num_lanes;                    // Nombre de lignes (8)
     float lane_width;                 // Largeur entre les lignes

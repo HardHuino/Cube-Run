@@ -1,12 +1,52 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{55ED5299-F70A-3906-9817-4ACA164044DB}|opengl_program.vcxproj|C:\\USERS\\COREN\\DOCUMENTS\\POLYTECH\\ET3\\INFOGRAPHIC\\CUBE-RUN\\CUBE\\INCLUDE\\VIEWER.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55ED5299-F70A-3906-9817-4ACA164044DB}|opengl_program.vcxproj|C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube\\src\\viewer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "viewer.h",
+              "DocumentMoniker": "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube\\include\\viewer.h",
+              "RelativeDocumentMoniker": "..\\cube\\include\\viewer.h",
+              "ToolTip": "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube\\include\\viewer.h",
+              "RelativeToolTip": "..\\cube\\include\\viewer.h",
+              "ViewState": "AgIAABAAAAAAAAAAAAArwCAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-29T15:57:15.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "viewer.cpp",
+              "DocumentMoniker": "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube\\src\\viewer.cpp",
+              "RelativeDocumentMoniker": "..\\cube\\src\\viewer.cpp",
+              "ToolTip": "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube\\src\\viewer.cpp",
+              "RelativeToolTip": "..\\cube\\src\\viewer.cpp",
+              "ViewState": "AgIAAEsAAAAAAAAAAAArwGkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-29T15:51:09.322Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

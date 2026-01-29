@@ -22,6 +22,10 @@ Viewer::Viewer(int width, int height) : width_(width), height_(height)
     ground2 = nullptr;
     sky_node = nullptr;
     ground_length = 200.0f;
+    
+	// Vitesse de course
+	run_speed = 30.0f;           // Vitesse initiale
+	speed_increment = 0.01f;    // Accélération par frame
 
     // Configuration des lignes
     num_lanes = 8;
@@ -101,6 +105,9 @@ void Viewer::reset_game() {
         player_rotation_z = 0.0f;
         target_rotation_z = 0.0f;
         start_rotation_z = 0.0f;
+
+		// Reinitialiser vitesse
+		run_speed = 30.0f;
     }
 
     glfwSetWindowTitle(win, "Cube Run - Score: 0");
@@ -202,7 +209,7 @@ void Viewer::run()
         if (player_node != nullptr)
         {
              // MOUVEMENT EN Z
-            float run_speed = 30.0f;
+            run_speed += speed_increment;
             player_node->translate(glm::vec3(0.0f, 0.0f, -run_speed * dt));
 
             // Déplacement par lignes avec animation
