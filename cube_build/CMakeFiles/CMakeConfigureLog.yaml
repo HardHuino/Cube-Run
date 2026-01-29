@@ -18,13 +18,13 @@ events:
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler:  
-      Build flags: /DWIN32;/D_WINDOWS;/W3
+      Build flags: 
       Id flags:  
       
       The output was:
       0
       MSBuild version 17.14.23+b0019275e for .NET Framework
-      Build started 1/29/2026 12:11:20 AM.
+      Build started 1/29/2026 5:28:18 PM.
       
       Project "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\3.31.10\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -53,7 +53,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.76
+      Time Elapsed 00:00:00.57
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -73,13 +73,13 @@ events:
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler:  
-      Build flags: /DWIN32;/D_WINDOWS;/W3;/GR;/EHsc
+      Build flags: 
       Id flags:  
       
       The output was:
       0
       MSBuild version 17.14.23+b0019275e for .NET Framework
-      Build started 1/29/2026 12:11:21 AM.
+      Build started 1/29/2026 5:28:19 PM.
       
       Project "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\3.31.10\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -108,7 +108,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.42
+      Time Elapsed 00:00:00.41
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -127,8 +127,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-8oghx5"
-      binary: "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-8oghx5"
+      source: "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-zxz1ep"
+      binary: "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-zxz1ep"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -137,34 +137,34 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-8oghx5'
+        Change Dir: 'C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-zxz1ep'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_85802.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_17a44.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 1/29/2026 12:11:22 AM.
+        Build started 1/29/2026 5:28:20 PM.
         
-        Project "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-8oghx5\\cmTC_85802.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-zxz1ep\\cmTC_17a44.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_85802.dir\\Debug\\".
+          Creating directory "cmTC_17a44.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-8oghx5\\Debug\\".
-          Creating directory "cmTC_85802.dir\\Debug\\cmTC_85802.tlog\\".
+          Creating directory "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-zxz1ep\\Debug\\".
+          Creating directory "cmTC_17a44.dir\\Debug\\cmTC_17a44.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_85802.dir\\Debug\\cmTC_85802.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_85802.dir\\Debug\\cmTC_85802.tlog\\unsuccessfulbuild".
+          Creating "cmTC_17a44.dir\\Debug\\cmTC_17a44.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_17a44.dir\\Debug\\cmTC_17a44.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_85802.dir\\Debug\\\\" /Fd"cmTC_85802.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\cmake-3.31.10-windows-x86_64\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_17a44.dir\\Debug\\\\" /Fd"cmTC_17a44.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\cmake-3.31.10-windows-x86_64\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35222 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_85802.dir\\Debug\\\\" /Fd"cmTC_85802.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\cmake-3.31.10-windows-x86_64\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_17a44.dir\\Debug\\\\" /Fd"cmTC_17a44.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\cmake-3.31.10-windows-x86_64\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-8oghx5\\Debug\\cmTC_85802.exe" /INCREMENTAL /ILK:"cmTC_85802.dir\\Debug\\cmTC_85802.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-8oghx5/Debug/cmTC_85802.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-8oghx5/Debug/cmTC_85802.lib" /MACHINE:X64  /machine:x64 cmTC_85802.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_85802.vcxproj -> C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-8oghx5\\Debug\\cmTC_85802.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-zxz1ep\\Debug\\cmTC_17a44.exe" /INCREMENTAL /ILK:"cmTC_17a44.dir\\Debug\\cmTC_17a44.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-zxz1ep/Debug/cmTC_17a44.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-zxz1ep/Debug/cmTC_17a44.lib" /MACHINE:X64  /machine:x64 cmTC_17a44.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_17a44.vcxproj -> C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-zxz1ep\\Debug\\cmTC_17a44.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_85802.dir\\Debug\\cmTC_85802.tlog\\unsuccessfulbuild".
-          Touching "cmTC_85802.dir\\Debug\\cmTC_85802.tlog\\cmTC_85802.lastbuildstate".
-        Done Building Project "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-8oghx5\\cmTC_85802.vcxproj" (default targets).
+          Deleting file "cmTC_17a44.dir\\Debug\\cmTC_17a44.tlog\\unsuccessfulbuild".
+          Touching "cmTC_17a44.dir\\Debug\\cmTC_17a44.tlog\\cmTC_17a44.lastbuildstate".
+        Done Building Project "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-zxz1ep\\cmTC_17a44.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
@@ -210,8 +210,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-s8dirj"
-      binary: "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-s8dirj"
+      source: "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-6bou4d"
+      binary: "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-6bou4d"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -221,34 +221,34 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-s8dirj'
+        Change Dir: 'C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-6bou4d'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c3d74.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4b42f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.23+b0019275e for .NET Framework
-        Build started 1/29/2026 12:11:23 AM.
+        Build started 1/29/2026 5:28:21 PM.
         
-        Project "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-s8dirj\\cmTC_c3d74.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-6bou4d\\cmTC_4b42f.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_c3d74.dir\\Debug\\".
+          Creating directory "cmTC_4b42f.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-s8dirj\\Debug\\".
-          Creating directory "cmTC_c3d74.dir\\Debug\\cmTC_c3d74.tlog\\".
+          Creating directory "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-6bou4d\\Debug\\".
+          Creating directory "cmTC_4b42f.dir\\Debug\\cmTC_4b42f.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_c3d74.dir\\Debug\\cmTC_c3d74.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_c3d74.dir\\Debug\\cmTC_c3d74.tlog\\unsuccessfulbuild".
+          Creating "cmTC_4b42f.dir\\Debug\\cmTC_4b42f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_4b42f.dir\\Debug\\cmTC_4b42f.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c3d74.dir\\Debug\\\\" /Fd"cmTC_c3d74.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\cmake-3.31.10-windows-x86_64\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4b42f.dir\\Debug\\\\" /Fd"cmTC_4b42f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\cmake-3.31.10-windows-x86_64\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35222 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c3d74.dir\\Debug\\\\" /Fd"cmTC_c3d74.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\cmake-3.31.10-windows-x86_64\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4b42f.dir\\Debug\\\\" /Fd"cmTC_4b42f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\cmake-3.31.10-windows-x86_64\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-s8dirj\\Debug\\cmTC_c3d74.exe" /INCREMENTAL /ILK:"cmTC_c3d74.dir\\Debug\\cmTC_c3d74.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-s8dirj/Debug/cmTC_c3d74.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-s8dirj/Debug/cmTC_c3d74.lib" /MACHINE:X64  /machine:x64 cmTC_c3d74.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_c3d74.vcxproj -> C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-s8dirj\\Debug\\cmTC_c3d74.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-6bou4d\\Debug\\cmTC_4b42f.exe" /INCREMENTAL /ILK:"cmTC_4b42f.dir\\Debug\\cmTC_4b42f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-6bou4d/Debug/cmTC_4b42f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-6bou4d/Debug/cmTC_4b42f.lib" /MACHINE:X64  /machine:x64 cmTC_4b42f.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_4b42f.vcxproj -> C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-6bou4d\\Debug\\cmTC_4b42f.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_c3d74.dir\\Debug\\cmTC_c3d74.tlog\\unsuccessfulbuild".
-          Touching "cmTC_c3d74.dir\\Debug\\cmTC_c3d74.tlog\\cmTC_c3d74.lastbuildstate".
-        Done Building Project "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-s8dirj\\cmTC_c3d74.vcxproj" (default targets).
+          Deleting file "cmTC_4b42f.dir\\Debug\\cmTC_4b42f.tlog\\unsuccessfulbuild".
+          Touching "cmTC_4b42f.dir\\Debug\\cmTC_4b42f.tlog\\cmTC_4b42f.lastbuildstate".
+        Done Building Project "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-6bou4d\\cmTC_4b42f.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
@@ -285,4 +285,180 @@ events:
       Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
       Microsoft (R) Incremental Linker Version 14.44.35222.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/cmake-3.31.10-windows-x86_64/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/cmake-3.31.10-windows-x86_64/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/cmake-3.31.10-windows-x86_64/share/cmake-3.31/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/cmake-3.31.10-windows-x86_64/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "external/glfw/CMakeLists.txt:56 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-d069vv"
+      binary: "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-d069vv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-d069vv'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d4c3e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.23+b0019275e for .NET Framework
+        Build started 1/29/2026 5:28:22 PM.
+        
+        Project "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-d069vv\\cmTC_d4c3e.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_d4c3e.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-d069vv\\Debug\\".
+          Creating directory "cmTC_d4c3e.dir\\Debug\\cmTC_d4c3e.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_d4c3e.dir\\Debug\\cmTC_d4c3e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d4c3e.dir\\Debug\\cmTC_d4c3e.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d4c3e.dir\\Debug\\\\" /Fd"cmTC_d4c3e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-d069vv\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35222 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d4c3e.dir\\Debug\\\\" /Fd"cmTC_d4c3e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-d069vv\\src.c"
+          src.c
+        C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-d069vv\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-d069vv\\cmTC_d4c3e.vcxproj]
+        Done Building Project "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-d069vv\\cmTC_d4c3e.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-d069vv\\cmTC_d4c3e.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-d069vv\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-d069vv\\cmTC_d4c3e.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.24
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/cmake-3.31.10-windows-x86_64/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/cmake-3.31.10-windows-x86_64/share/cmake-3.31/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/cmake-3.31.10-windows-x86_64/share/cmake-3.31/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "external/glfw/CMakeLists.txt:56 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-za9rko"
+      binary: "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-za9rko"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-za9rko'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c3f80.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.23+b0019275e for .NET Framework
+        Build started 1/29/2026 5:28:22 PM.
+        
+        Project "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-za9rko\\cmTC_c3f80.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_c3f80.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-za9rko\\Debug\\".
+          Creating directory "cmTC_c3f80.dir\\Debug\\cmTC_c3f80.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_c3f80.dir\\Debug\\cmTC_c3f80.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_c3f80.dir\\Debug\\cmTC_c3f80.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c3f80.dir\\Debug\\\\" /Fd"cmTC_c3f80.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-za9rko\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35222 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c3f80.dir\\Debug\\\\" /Fd"cmTC_c3f80.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-za9rko\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-za9rko\\Debug\\cmTC_c3f80.exe" /INCREMENTAL /ILK:"cmTC_c3f80.dir\\Debug\\cmTC_c3f80.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-za9rko/Debug/cmTC_c3f80.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-za9rko/Debug/cmTC_c3f80.lib" /MACHINE:X64  /machine:x64 cmTC_c3f80.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-za9rko\\cmTC_c3f80.vcxproj]
+        Done Building Project "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-za9rko\\cmTC_c3f80.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-za9rko\\cmTC_c3f80.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-za9rko\\cmTC_c3f80.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.32
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/cmake-3.31.10-windows-x86_64/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/cmake-3.31.10-windows-x86_64/share/cmake-3.31/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/cmake-3.31.10-windows-x86_64/share/cmake-3.31/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "external/glfw/CMakeLists.txt:56 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-y2nrgp"
+      binary: "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-y2nrgp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-y2nrgp'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_70d31.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.23+b0019275e for .NET Framework
+        Build started 1/29/2026 5:28:23 PM.
+        
+        Project "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-y2nrgp\\cmTC_70d31.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_70d31.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-y2nrgp\\Debug\\".
+          Creating directory "cmTC_70d31.dir\\Debug\\cmTC_70d31.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_70d31.dir\\Debug\\cmTC_70d31.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_70d31.dir\\Debug\\cmTC_70d31.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_70d31.dir\\Debug\\\\" /Fd"cmTC_70d31.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-y2nrgp\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35222 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_70d31.dir\\Debug\\\\" /Fd"cmTC_70d31.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-y2nrgp\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-y2nrgp\\Debug\\cmTC_70d31.exe" /INCREMENTAL /ILK:"cmTC_70d31.dir\\Debug\\cmTC_70d31.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-y2nrgp/Debug/cmTC_70d31.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/coren/Documents/Polytech/ET3/InfoGraphic/Cube-Run/cube_build/CMakeFiles/CMakeScratch/TryCompile-y2nrgp/Debug/cmTC_70d31.lib" /MACHINE:X64  /machine:x64 cmTC_70d31.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-y2nrgp\\cmTC_70d31.vcxproj]
+        Done Building Project "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-y2nrgp\\cmTC_70d31.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-y2nrgp\\cmTC_70d31.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\coren\\Documents\\Polytech\\ET3\\InfoGraphic\\Cube-Run\\cube_build\\CMakeFiles\\CMakeScratch\\TryCompile-y2nrgp\\cmTC_70d31.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.32
+        
+      exitCode: 1
 ...
